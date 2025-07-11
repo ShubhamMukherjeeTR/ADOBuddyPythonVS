@@ -10,3 +10,4 @@ azure-identity
 python-dotenv
 typing-extensions
 streamlit
+mcp-use
