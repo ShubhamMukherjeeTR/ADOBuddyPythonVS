@@ -37,9 +37,6 @@
     <Content Include=".github\copilot-instructions.md" />
     <Content Include="Chec-NodeAzureCli\Check-NodeAzurenew.ps1" />
     <Content Include="Chec-NodeAzureCli\CheckADOBuddyMandate.bat" />
-    <Content Include="README.md" />
-    <Content Include="README_AUTH_FIX.md" />
-    <Content Include="README_Console.md" />
     <Content Include="requirements.txt" />
     <Content Include="TeamNameAndManager.json" />
   </ItemGroup>
