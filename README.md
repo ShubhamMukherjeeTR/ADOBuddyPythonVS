@@ -90,22 +90,10 @@ flowchart TD
    pip install -r requirements.txt
    ```
 
-3. **Set up environment configuration**
-   ```bash
-   cp .env.template .env
-   ```
-   Edit `.env` file with your configurations:
-   ```env
-   ADO_ORGANIZATION_URL=https://dev.azure.com/your-organization
-   ADO_PAT=your-personal-access-token
-   AZURE_FOUNDRY_ENDPOINT=your-azure-openai-endpoint
-   AZURE_FOUNDRY_API_KEY=your-azure-openai-key
-   ```
-
-4. **Install Azure DevOps MCP Server**
-   ```bash
-   npx -y @azure-devops/mcp your-organization-name
-   ```
+3. **Install Azure CLI and Node.js from official company portal**
+   Check-NodeAzurenew.ps1 file helps installing Azure CLI and Node.js from official company portal for TR internal users.
+   Run the file as powershell.
+   
 
 ## 🚀 Usage
 
@@ -142,16 +130,11 @@ Launches at `http://127.0.0.3:7881` for dedicated database script processing.
 
 ## 🔐 Authentication
 
-The project supports multiple authentication methods:
-
-### Option 1: Personal Access Token (Recommended)
-1. Generate PAT in Azure DevOps with Work Items (Read & Write) permissions
-2. Add to `.env` file: `ADO_PAT=your-token-here`
-
-### Option 2: Azure CLI
+### Azure CLI
 1. Install Azure CLI
 2. Run `az login`
 3. Set default organization: `az devops configure --defaults organization=https://dev.azure.com/your-org`
+Note : All steps are covered in powershell file mentioned above so need to run explicitly.
 
 ## 📁 Project Structure
 
