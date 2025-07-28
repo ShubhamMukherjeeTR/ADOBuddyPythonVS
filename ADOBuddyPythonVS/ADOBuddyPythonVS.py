@@ -230,8 +230,8 @@ with gr.Blocks(title="Azure DevOps Chatbot", css=css) as demo:
             gr.Examples(
                 examples=[
                     "List me 1 task that I am assigned to in Azure DevOps in taxprof project",
-                    "Show me all my assigned work items",
-                    "What are the open bugs in taxprof project?"
+                    "update comment as 'Unit testing completed' in task 4127687 in Taxprof project",
+                    "Give me latest information on latest successful build pipeline of Roll BlueMoon Build Numbers in taxprof project"
                 ],
                 inputs=msg
             )
